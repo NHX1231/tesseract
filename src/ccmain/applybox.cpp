@@ -315,9 +315,9 @@ bool Tesseract::ResegmentCharBox(PAGE_RES *page_res, const TBOX *prev_box, const
   PAGE_RES_IT page_res_it(page_res);
   WERD_RES *word_res;
   for (word_res = page_res_it.word(); word_res != nullptr; word_res = page_res_it.forward()) {
-    if (!word_res->box_word->bounding_box().major_overlap(box)) {
-      continue;
-    }
+    //if (!word_res->box_word->bounding_box().major_overlap(box)) {
+    //  continue;
+    //}
     if (applybox_debug > 1) {
       tprintf("Checking word box:");
       word_res->box_word->bounding_box().print();
