@@ -647,7 +647,7 @@ int main(int argc, char **argv) {
   bool print_fonts_table = false;
   l_int32 dpi = 0;
   int arg_i = 1;
-  tesseract::PageSegMode pagesegmode = tesseract::PSM_AUTO;
+  tesseract::PageSegMode pagesegmode = tesseract::PSM_SINGLE_BLOCK;
 #ifdef DISABLED_LEGACY_ENGINE
   auto enginemode = tesseract::OEM_LSTM_ONLY;
 #else
